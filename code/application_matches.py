@@ -61,10 +61,14 @@ and app.name: /termite/
 
 apps.windows_command_processor = """
 os: windows
+os: windows
 and app.name: Windows Command Processor
 os: windows
 and app.exe: cmd.exe
+os: windows
+and app.name: cmd.exe
 """
+
 
 apps.windows_terminal = """
 os: windows

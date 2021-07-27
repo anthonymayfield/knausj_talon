@@ -53,6 +53,7 @@ port_mapping = {
     "PyCharm": 8658,
     "pycharm64.exe": 8658,
     "webstorm64.exe": 8663,
+    "WebStorm": 8663,
 }
 
 
@@ -121,6 +122,7 @@ mod.apps.jetbrains = "app.name: idea64.exe"
 mod.apps.jetbrains = "app.name: PyCharm64.exe"
 mod.apps.jetbrains = "app.name: pycharm64.exe"
 mod.apps.jetbrains = "app.name: webstorm64.exe"
+mod.apps.jetbrains = "app.name: WebStorm"
 mod.apps.jetbrains = """
 os: mac
 and app.bundle: com.jetbrains.pycharm
@@ -169,10 +171,10 @@ class CodeActions:
 @ctx.action_class('edit')
 class EditActions:
     #talon edit actions
-    def copy():                   actions.user.idea('action EditorCopy')
-    def cut():                    actions.user.idea('action EditorCut')
+    #def copy():                   actions.user.idea('action EditorCopy')
+    #def cut():                    actions.user.idea('action EditorCut')
     def delete():                 actions.user.idea('action EditorBackSpace')
-    def paste():                  actions.user.idea('action EditorPaste')
+    #def paste():                  actions.user.idea('action EditorPaste')
     def find_next():              actions.user.idea('action FindNext')
     def find_previous():          actions.user.idea('action FindPrevious')
     def find(text: str=None):     actions.user.idea('action Find')
